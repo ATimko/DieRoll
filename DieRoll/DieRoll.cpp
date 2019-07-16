@@ -7,7 +7,11 @@ using namespace std;
 
 double estimatePI();
 const unsigned int TRIALS = 1'000;
-const unsigned int RANDOM_UPPER_LIMIT = 4.0;
+const unsigned int RANDOM_UPPER_LIMIT = 1'000'000;
+
+//mystery;
+//printAverage;
+//forLoopThing;
 
 int main() {
 	default_random_engine engine{ static_cast<unsigned int>(time(0)) };
@@ -18,12 +22,22 @@ int main() {
 	}
 
 	cout << "PI: " << showpoint << estimatePI() << endl;
+	mystery();
+	printAverage();
 
-//	printAverage();
-//	mystery();
+	forLoopThing();
 	system("pause");
 	return 0;
 	}
+
+	void forLoopThing() {
+		for (int i = 10; i >= 0; --i) {
+			cout << i << endl;
+			char ch = 'z';
+			cin >> ch;
+		}
+	}
+
 	void printAverage() {
 		double total = 0.0;
 		int count = 0;
