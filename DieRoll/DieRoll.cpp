@@ -5,13 +5,14 @@
 
 using namespace std;
 
-double estimatePI();
 const unsigned int TRIALS = 1'000;
 const unsigned int RANDOM_UPPER_LIMIT = 1'000'000;
 
-//mystery;
-//printAverage;
-//forLoopThing;
+double estimatePI();
+
+void mystery();
+void printAverage();
+void forLoopThing();
 
 int main() {
 	default_random_engine engine{ static_cast<unsigned int>(time(0)) };
