@@ -23,10 +23,13 @@ int main() {
 	}
 
 	cout << "PI: " << showpoint << estimatePI() << endl;
+
 	mystery();
+
 	printAverage();
 
 	forLoopThing();
+
 	system("pause");
 	return 0;
 	}
